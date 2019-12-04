@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using AnimalCrossing.Models;
 
 namespace AnimalCrossing.Data
@@ -12,6 +12,7 @@ namespace AnimalCrossing.Data
 
         public DbSet<Cat> Cats { get; set; }
         public DbSet<Species> Species { get; set; }
+        public DbSet<AnimalCrossing.Models.CatDate> CatDate { get; set; }
 
                     
     }

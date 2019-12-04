@@ -1,0 +1,53 @@
+@model IEnumerable<AnimalCrossing.Models.CatDate>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HostId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GuestId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DateTime)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HostId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GuestId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.CatDateId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.CatDateId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.CatDateId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
