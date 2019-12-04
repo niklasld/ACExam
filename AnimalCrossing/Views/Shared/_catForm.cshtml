@@ -1,0 +1,51 @@
+﻿@model CatDetailsView;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+    @Html.ValidationSummary()
+
+
+
+    <div>
+        @Html.LabelFor(x=> x.cat.Name)
+        @Html.TextBoxFor(x => x.cat.Name)
+    </div>
+
+    <div>
+    @Html.LabelFor(x=> x.cat.Description)
+    @Html.TextBoxFor(x => x.cat.Description)
+
+    </div>
+    @Html.LabelFor(x=> x.cat.BirthDate)
+    @Html.EditorFor(x => x.cat.BirthDate)
+
+       <div>
+    @Html.LabelFor(x => x.cat.Species)
+    <select asp-for="cat.SpeciesId" asp-items="Model.speciesList" class="form-control"> 
+    <option value="">Select something</option> 
+    </select>
+    </div>
+
+    <div>
+
+        @Html.LabelFor(x=> x.cat.Gender)
+        @Html.DropDownListFor(x => x.cat.Gender, Html.GetEnumSelectList<Gender>(), "Select Gender"
+       )
+    </div>
+
+
+    <div>
+        @Html.LabelFor(x =>x.cat.ProfilePicture)
+        @Html.TextBoxFor(x => x.cat.ProfilePicture)
+    </div>
+
+    
+
+    <button type ="submit">Save Cat</button>
+
+

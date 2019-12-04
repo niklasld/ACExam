@@ -1,0 +1,28 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model) {
+            <div class="card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                <div class="card-body">
+
+                    <img src= @item.ProfilePicture class="card-img-top" alt="...">
+                    <h5 class="card-title">@item.Name</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">@item.Gender</h6>
+                    <p class="card-text">@item.Description</p>
+                    <p class="card-text">@item.BirthDate</p>
+                    <p class="card-text">@item.Species.Name</p>
+                    <a class="btn btn-primary" asp-controller="Animal" asp-action="EditCat"
+                        asp-route-id ="@item.CatId" >Edit cat</a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>

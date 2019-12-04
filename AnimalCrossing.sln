@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalCrossing", "AnimalCrossing\AnimalCrossing.csproj", "{CDEE9E37-7DE4-48B5-9498-BED216134CA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalCrossingTests", "AnimalCrossingTests\AnimalCrossingTests.csproj", "{557CCCBF-A75D-4E44-9A52-102932C78F82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalCrossingApi", "AnimalCrossingApi\AnimalCrossingApi.csproj", "{D7AD83C1-E485-427E-A47D-E741B0EC4702}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDEE9E37-7DE4-48B5-9498-BED216134CA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDEE9E37-7DE4-48B5-9498-BED216134CA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDEE9E37-7DE4-48B5-9498-BED216134CA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDEE9E37-7DE4-48B5-9498-BED216134CA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{557CCCBF-A75D-4E44-9A52-102932C78F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{557CCCBF-A75D-4E44-9A52-102932C78F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{557CCCBF-A75D-4E44-9A52-102932C78F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{557CCCBF-A75D-4E44-9A52-102932C78F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7AD83C1-E485-427E-A47D-E741B0EC4702}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AD83C1-E485-427E-A47D-E741B0EC4702}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AD83C1-E485-427E-A47D-E741B0EC4702}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AD83C1-E485-427E-A47D-E741B0EC4702}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
