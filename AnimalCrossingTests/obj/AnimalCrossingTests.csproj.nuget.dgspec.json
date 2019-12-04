@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossingTests\\AnimalCrossingTests.csproj": {}
+    "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossingTests\\AnimalCrossingTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossingTests\\AnimalCrossingTests.csproj": {
+    "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossingTests\\AnimalCrossingTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossingTests\\AnimalCrossingTests.csproj",
+        "projectUniqueName": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossingTests\\AnimalCrossingTests.csproj",
         "projectName": "AnimalCrossingTests",
-        "projectPath": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossingTests\\AnimalCrossingTests.csproj",
+        "projectPath": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossingTests\\AnimalCrossingTests.csproj",
         "packagesPath": "C:\\Users\\Niklas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossingTests\\obj\\",
+        "outputPath": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossingTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Niklas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.0": {
             "projectReferences": {
-              "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossing\\AnimalCrossing.csproj": {
-                "projectPath": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossing\\AnimalCrossing.csproj"
+              "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossing\\AnimalCrossing.csproj": {
+                "projectPath": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossing\\AnimalCrossing.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossing\\AnimalCrossing.csproj": {
+    "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossing\\AnimalCrossing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossing\\AnimalCrossing.csproj",
+        "projectUniqueName": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossing\\AnimalCrossing.csproj",
         "projectName": "AnimalCrossing",
-        "projectPath": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossing\\AnimalCrossing.csproj",
+        "projectPath": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossing\\AnimalCrossing.csproj",
         "packagesPath": "C:\\Users\\Niklas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossing\\obj\\",
+        "outputPath": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossing\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Niklas\\AppData\\Roaming\\NuGet\\NuGet.Config",

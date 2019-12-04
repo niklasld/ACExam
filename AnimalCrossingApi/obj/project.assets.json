@@ -9429,11 +9429,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossingApi\\AnimalCrossingApi.csproj",
+      "projectUniqueName": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossingApi\\AnimalCrossingApi.csproj",
       "projectName": "AnimalCrossingApi",
-      "projectPath": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossingApi\\AnimalCrossingApi.csproj",
+      "projectPath": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossingApi\\AnimalCrossingApi.csproj",
       "packagesPath": "C:\\Users\\Niklas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossingApi\\obj\\",
+      "outputPath": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossingApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Niklas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9449,8 +9449,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossing\\AnimalCrossing.csproj": {
-              "projectPath": "C:\\Users\\Niklas\\Documents\\GitHub\\AnimalCrossingExam\\AnimalCrossing\\AnimalCrossing.csproj"
+            "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossing\\AnimalCrossing.csproj": {
+              "projectPath": "C:\\Users\\Niklas\\Documents\\GitHub\\ACExam\\AnimalCrossing\\AnimalCrossing.csproj"
             }
           }
         }
