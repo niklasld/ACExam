@@ -18,6 +18,7 @@ namespace AnimalCrossing.Models
         public void Delete(int catId)
         {
             _context.Cats.Remove(this.Get(catId));
+            _context.SaveChanges();
         }
 
         public List<Cat> Find(string search)

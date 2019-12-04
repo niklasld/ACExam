@@ -27,8 +27,24 @@ namespace AnimalCrossing.Models.ViewModels
 
         }
 
+        public static CateDateVM CreateCatDate (ICatDateRepository catDateRepository) {
+
+            return new CateDateVM()
+            {
+                cat = new Cat(),
+                CatList = new SelectList(catDateRepository.Get(), "CatId", "Name")
+
+                
+               
+
+
+            };
+            
+        }
+
         public ViewModelCreator()
         {
         }
+
     }
 }

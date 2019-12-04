@@ -544,3 +544,4 @@ C:/Users/Niklas/Documents/GitHub/AnimalCrossing/AnimalCrossing/obj/Debug/netcore
 /Users/killercomp2.0/Projects/ACExam/AnimalCrossing/obj/Debug/netcoreapp3.0/Razor/Views/CatDate/Details.cshtml.g.cs
 /Users/killercomp2.0/Projects/ACExam/AnimalCrossing/obj/Debug/netcoreapp3.0/Razor/Views/CatDate/Edit.cshtml.g.cs
 /Users/killercomp2.0/Projects/ACExam/AnimalCrossing/obj/Debug/netcoreapp3.0/Razor/Views/CatDate/Index.cshtml.g.cs
+/Users/killercomp2.0/Projects/ACExam/AnimalCrossing/obj/Debug/netcoreapp3.0/Razor/Views/Animal/DeleteCat.cshtml.g.cs

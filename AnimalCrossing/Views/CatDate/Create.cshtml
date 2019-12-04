@@ -16,6 +16,14 @@
                 <label asp-for="HostId" class="control-label"></label>
                 <input asp-for="HostId" class="form-control" />
                 <span asp-validation-for="HostId" class="text-danger"></span>
+
+            @*<div>
+                @Html.LabelFor(x => x.cat.Species)
+                <select asp-for="cat.SpeciesId" asp-items="Model.speciesList" class="form-control"> 
+                <option value="">Select something</option> 
+                </select>
+            </div>*@
+
             </div>
             <div class="form-group">
                 <label asp-for="GuestId" class="control-label"></label>

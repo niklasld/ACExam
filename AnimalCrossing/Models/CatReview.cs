@@ -1,9 +1,11 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace AnimalCrossing.Models
 {
     public class CatReview
     {
-
+        [Key]
         public int ReviewId { get; set; }
 
         public int Rating { get; set; } // 1-5
