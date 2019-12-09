@@ -4,18 +4,22 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="AnimalCrossing/Views/Shared/_ShowCatPartialView.cshtml">
     <Files>
       <File FileName="AnimalCrossing/Views/Home/Privacy.cshtml" Line="46" Column="71" />
-      <File FileName="AnimalCrossing/Views/Home/Index.cshtml" Line="7" Column="152" />
-      <File FileName="AnimalCrossing/appsettings.json" Line="1" Column="1" />
+      <File FileName="AnimalCrossing/Views/Home/Index.cshtml" />
+      <File FileName="AnimalCrossing/appsettings.json" />
       <File FileName="AnimalCrossing/Views/Shared/_ShowCatPartialView.cshtml" Line="1" Column="1" />
-      <File FileName="AnimalCrossing/Views/Animal/showCats.cshtml" Line="4" Column="3" />
-      <File FileName="AnimalCrossing/Views/Shared/_LoginPartial.cshtml" Line="1" Column="1" />
+      <File FileName="AnimalCrossing/Views/Animal/showCats.cshtml" />
+      <File FileName="AnimalCrossing/Views/Shared/_LoginPartial.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AnimalCrossing" expanded="True">
             <Node name="AnimalCrossing" expanded="True">
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="_ShowCatPartialView.cshtml" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
