@@ -1,47 +1,24 @@
 ﻿<Properties StartupConfiguration="{CDEE9E37-7DE4-48B5-9498-BED216134CA6}|Default">
   <MonoDevelop.Ide.ItemProperties.AnimalCrossing PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.AnimalCrossingApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AnimalCrossing/Models/AnimalRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AnimalCrossing/Views/Home/Index.cshtml">
     <Files>
-      <File FileName="AnimalCrossing/Models/CatDate.cs" Line="3" Column="1" />
-      <File FileName="AnimalCrossing/Models/CatReview.cs" Line="22" Column="1" />
-      <File FileName="AnimalCrossing/Models/Cat.cs" Line="1" Column="1" />
-      <File FileName="AnimalCrossing/Models/AnimalCrossingContext.cs" Line="15" Column="1" />
-      <File FileName="AnimalCrossing/Controllers/AnimalController.cs" Line="1" Column="1" />
-      <File FileName="AnimalCrossing/Models/AnimalRepository.cs" Line="1" Column="1" />
+      <File FileName="AnimalCrossing/Views/Home/Privacy.cshtml" Line="46" Column="71" />
+      <File FileName="AnimalCrossing/Views/Home/Index.cshtml" Line="7" Column="152" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="AnimalCrossing" expanded="True">
             <Node name="AnimalCrossing" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Areas" expanded="True">
-                <Node name="Identity" expanded="True">
-                  <Node name="Pages" expanded="True">
-                    <Node name="Account" expanded="True">
-                      <Node name="Login.cshtml" expanded="True" />
-                      <Node name="Logout.cshtml" expanded="True" />
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="ViewModels" expanded="True" />
-                <Node name="AnimalRepository.cs" selected="True" />
-              </Node>
               <Node name="Views" expanded="True">
-                <Node name="Animal" expanded="True" />
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="appsettings.json" expanded="True" />
             </Node>
-            <Node name="AnimalCrossingApi" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Data" expanded="True" />
-              <Node name="Models" expanded="True" />
-            </Node>
+            <Node name="AnimalCrossingTests" expanded="True" />
           </Node>
         </State>
       </Pad>

@@ -1,4 +1,4 @@
 ﻿<StaticWebAssets Version="1.0">
-  <ContentRoot BasePath="/Identity" Path="/Users/killercomp2.0/.nuget/packages/microsoft.aspnetcore.identity.ui/3.0.0/build/../staticwebassets/V4" />
-  <ContentRoot BasePath="_content/AnimalCrossing" Path="/Users/killercomp2.0/Projects/AnimalCrossing/AnimalCrossing/wwwroot/" />
+  <ContentRoot BasePath="/Identity" Path="/Users/admin/.nuget/packages/microsoft.aspnetcore.identity.ui/3.0.0/build/../staticwebassets/V4" />
+  <ContentRoot BasePath="_content/AnimalCrossing" Path="/Users/admin/Projects/ACExam/AnimalCrossing/wwwroot/" />
 </StaticWebAssets>
