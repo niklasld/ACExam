@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/admin/Projects/ACExam/AnimalCrossing/AnimalCrossing.csproj": {}
+    "/Users/killercomp2.0/Projects/ACExam/AnimalCrossing/AnimalCrossing.csproj": {}
   },
   "projects": {
-    "/Users/admin/Projects/ACExam/AnimalCrossing/AnimalCrossing.csproj": {
+    "/Users/killercomp2.0/Projects/ACExam/AnimalCrossing/AnimalCrossing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/admin/Projects/ACExam/AnimalCrossing/AnimalCrossing.csproj",
+        "projectUniqueName": "/Users/killercomp2.0/Projects/ACExam/AnimalCrossing/AnimalCrossing.csproj",
         "projectName": "AnimalCrossing",
-        "projectPath": "/Users/admin/Projects/ACExam/AnimalCrossing/AnimalCrossing.csproj",
-        "packagesPath": "/Users/admin/.nuget/packages/",
-        "outputPath": "/Users/admin/Projects/ACExam/AnimalCrossing/obj/",
+        "projectPath": "/Users/killercomp2.0/Projects/ACExam/AnimalCrossing/AnimalCrossing.csproj",
+        "packagesPath": "/Users/killercomp2.0/.nuget/packages/",
+        "outputPath": "/Users/killercomp2.0/Projects/ACExam/AnimalCrossing/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "/Users/admin/.config/NuGet/NuGet.Config"
+          "/Users/killercomp2.0/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
