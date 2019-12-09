@@ -403,3 +403,6 @@ ASALocalRun/
 
 # Local History for Visual Studio
 .localhistory/
+AnimalCrossingTests/obj/Debug/netcoreapp3.0/AnimalCrossingTests.csprojAssemblyReference.cache
+AnimalCrossingApi/obj/Debug/netcoreapp3.0/AnimalCrossingApi.csprojAssemblyReference.cache
+.vs/AnimalCrossing/xs/project-cache/AnimalCrossing-Debug.json
