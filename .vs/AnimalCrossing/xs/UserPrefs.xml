@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{CDEE9E37-7DE4-48B5-9498-BED216134CA6}|Default">
   <MonoDevelop.Ide.ItemProperties.AnimalCrossing PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.ItemProperties.AnimalCrossingApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="AnimalCrossing/Views/Shared/_ShowCatPartialView.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AnimalCrossing/Views/CatDate/Index.cshtml">
     <Files>
       <File FileName="AnimalCrossing/Views/Home/Privacy.cshtml" Line="46" Column="71" />
       <File FileName="AnimalCrossing/Views/Home/Index.cshtml" />
@@ -9,6 +9,7 @@
       <File FileName="AnimalCrossing/Views/Shared/_ShowCatPartialView.cshtml" Line="1" Column="1" />
       <File FileName="AnimalCrossing/Views/Animal/showCats.cshtml" />
       <File FileName="AnimalCrossing/Views/Shared/_LoginPartial.cshtml" />
+      <File FileName="AnimalCrossing/Views/CatDate/Index.cshtml" Line="7" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,8 +17,8 @@
           <Node name="AnimalCrossing" expanded="True">
             <Node name="AnimalCrossing" expanded="True">
               <Node name="Views" expanded="True">
-                <Node name="Shared" expanded="True">
-                  <Node name="_ShowCatPartialView.cshtml" selected="True" />
+                <Node name="CatDate" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
                 </Node>
               </Node>
             </Node>
