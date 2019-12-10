@@ -124,5 +124,11 @@ namespace AnimalCrossing.Controllers
 
             return View("showCats", this.IAnimalRepo.Get());
         }
+        [HttpGet]
+        public IActionResult CreateDummyCat()
+        {
+            this.IAnimalRepo.addDummyCat();
+            return View("ShowCats", IAnimalRepo.Get());
+        }
     }
 }
