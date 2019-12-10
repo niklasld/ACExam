@@ -1,4 +1,4 @@
-    @model IEnumerable<AnimalCrossing.Models.CatDate>
+@model IEnumerable<AnimalCrossing.Models.CatDate>
 
 @{
     ViewData["Title"] = "Index";
@@ -19,10 +19,11 @@
             <div class="card col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
                 <div class="card-body">
 
-                    <h5 class="card-title">@item.HostId</h5>
-                    <p class="card-text">@item.HostCat</p>
-                    <p class="card-text">@item.GuestId</p>
-                    <p class="card-text">@item.GuestCat</p>
+                    <h3 class="card-text">@item.HostCat.Name</h3>
+                    <img src=@item.HostCat.ProfilePicture class="card-img-top" alt="...">
+
+                    <h3 class="card-text">@item.GuestCat.Name</h3>
+                    <img src=@item.GuestCat.ProfilePicture class = "card-img-top" alts ="..." />
                     <p class="card-text">@item.Location</p>
                     <p class="card-text">@item.DateTime</p>
                     <a class="btn btn-primary" asp-controller="CatDate"  asp-action="Edit" asp-route-id="@item.CatDateId">Edit</a> 

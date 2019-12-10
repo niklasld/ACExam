@@ -7,12 +7,12 @@ namespace AnimalCrossing.Models
     {
         public int CatDateId { get; set; }
 
-        [ForeignKey("CatId")]
         public int HostId { get; set; } // CatId
+        [ForeignKey("HostId")]
         public Cat HostCat { get; set; }
-
-        [ForeignKey("CatId")]
+        
         public int GuestId { get; set; } //CatId
+        [ForeignKey("GuestId")]
         public Cat GuestCat { get; set; }
 
         public string Location { get; set; }

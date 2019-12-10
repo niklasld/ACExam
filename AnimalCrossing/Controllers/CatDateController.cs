@@ -7,22 +7,33 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AnimalCrossing.Data;
 using AnimalCrossing.Models;
+using AnimalCrossing.Models.ViewModels;
 
 namespace AnimalCrossing.Controllers
 {
     public class CatDateController : Controller
     {
         private readonly AnimalCrossingContext _context;
+        private readonly ICatDateRepository ICatRepo;
 
-        public CatDateController(AnimalCrossingContext context)
+
+        public CatDateController(AnimalCrossingContext context, ICatDateRepository IcatRepo)
         {
             _context = context;
+            ICatRepo = IcatRepo;
         }
 
-        // GET: CatDate
-        public async Task<IActionResult> Index()
+        //GET: CatDate
+        //public async Task<IActionResult> Index()
+        //{
+        //    return View(await _context.CatDate.ToListAsync());
+        //}
+
+        public IActionResult Index()
         {
-            return View(await _context.CatDate.ToListAsync());
+           var Cats = ICatRepo.Get();
+
+            return View(Cats);
         }
 
         // GET: CatDate/Details/5

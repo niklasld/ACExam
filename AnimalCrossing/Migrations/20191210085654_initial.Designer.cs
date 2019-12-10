@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AnimalCrossing.Migrations
 {
     [DbContext(typeof(AnimalCrossingContext))]
-    [Migration("20191204121607_CatDateController")]
-    partial class CatDateController
+    [Migration("20191210085654_initial")]
+    partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -60,13 +60,7 @@ namespace AnimalCrossing.Migrations
                     b.Property<DateTime>("DateTime")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("GuestCatCatId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<int>("GuestId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("HostCatCatId")
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("HostId")
@@ -77,11 +71,36 @@ namespace AnimalCrossing.Migrations
 
                     b.HasKey("CatDateId");
 
-                    b.HasIndex("GuestCatCatId");
+                    b.HasIndex("GuestId");
 
-                    b.HasIndex("HostCatCatId");
+                    b.HasIndex("HostId");
 
                     b.ToTable("CatDate");
+                });
+
+            modelBuilder.Entity("AnimalCrossing.Models.CatReview", b =>
+                {
+                    b.Property<int>("ReviewId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("Comment")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Rating")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("ReviewDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("ReviewingCatId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("ReviewId");
+
+                    b.HasIndex("ReviewingCatId");
+
+                    b.ToTable("CaReviews");
                 });
 
             modelBuilder.Entity("AnimalCrossing.Models.Species", b =>
@@ -115,11 +134,24 @@ namespace AnimalCrossing.Migrations
                 {
                     b.HasOne("AnimalCrossing.Models.Cat", "GuestCat")
                         .WithMany()
-                        .HasForeignKey("GuestCatCatId");
+                        .HasForeignKey("GuestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.HasOne("AnimalCrossing.Models.Cat", "HostCat")
                         .WithMany()
-                        .HasForeignKey("HostCatCatId");
+                        .HasForeignKey("HostId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("AnimalCrossing.Models.CatReview", b =>
+                {
+                    b.HasOne("AnimalCrossing.Models.Cat", "ReviewingCat")
+                        .WithMany()
+                        .HasForeignKey("ReviewingCatId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }
