@@ -24,7 +24,7 @@
 
                     <h3 class="card-text">@item.GuestCat.Name</h3>
                     <img src=@item.GuestCat.ProfilePicture class = "card-img-top" alts ="..." />
-                    <p class="card-text">City: @item.Location</p>
+                    <h5 class="card-text">City: @item.Location</h5>
                     <p class="card-text">@item.DateTime</p>
                     <a class="btn btn-primary" asp-controller="CatDate"  asp-action="Edit" asp-route-id="@item.CatDateId">Edit</a> 
                     <a class="btn btn-primary" asp-controller="CatDate"  asp-action="Details" asp-route-id="@item.CatDateId">Details</a> 
