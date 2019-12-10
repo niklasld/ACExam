@@ -14,6 +14,8 @@ namespace AnimalCrossing.Models
         public List<Cat> OppositeCat(Cat c);
 
         public List<Cat> Find(string search);
+
+        public void addDummyCat();
     }
 
 }

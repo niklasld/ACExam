@@ -71,5 +71,18 @@ namespace AnimalCrossing.Models
             return cats.ToList();
 
         }
+
+        public void addDummyCat()
+        {
+            Cat dummyCat = new Cat();
+            dummyCat.Name = "KittyMeow";
+            dummyCat.Gender = 0;
+            dummyCat.ProfilePicture = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTALieQ2I-jffpACKAtUfQb8tT5Ymr8E-0vXHn6wxP2Ol4ia9y5&s";
+            dummyCat.SpeciesId = 1;
+            dummyCat.Description = "This cat i is made for testing usage.";
+            _context.Add(dummyCat);
+            _context.SaveChanges();
+
+        }
     }
 }
