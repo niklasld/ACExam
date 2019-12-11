@@ -23,5 +23,30 @@ namespace AnimalCrossing.Models.ViewModels
 
         }
 
+       public void Delete(int CatDateId) {
+
+            _context.CatDate.Remove(this.Get(CatDateId));
+        }
+
+
+        public CatDate Get(int catDateId)
+        {
+            return _context.CatDate.Find(catDateId);
+        }
+
+        public void Save(CatDate cd)
+        {
+            if (cd.CatDateId == 0)
+            {
+                _context.CatDate.Add(cd);
+            }
+            else
+            {
+                _context.CatDate.Update(cd);
+            }
+            _context.SaveChanges();
+
+        }
+
     }
 }

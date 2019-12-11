@@ -18,17 +18,13 @@ namespace AnimalCrossing.Controllers
         private readonly ICatDateRepository ICatRepo;
 
 
-        public CatDateController(AnimalCrossingContext context, ICatDateRepository IcatRepo)
+        public CatDateController(ICatDateRepository IcatRepo)
         {
-            _context = context;
-            ICatRepo = IcatRepo;
+           
+            this.ICatRepo = IcatRepo;
         }
 
-        //GET: CatDate
-        //public async Task<IActionResult> Index()
-        //{
-        //    return View(await _context.CatDate.ToListAsync());
-        //}
+ 
 
         public IActionResult Index()
         {
@@ -38,21 +34,17 @@ namespace AnimalCrossing.Controllers
         }
 
         // GET: CatDate/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Details(int? id)
         {
-            if (id == null)
+            if (id != null)
+            {
+                return View(ICatRepo.Get((int)id));
+            }
+            else
             {
                 return NotFound();
             }
 
-            var catDate = await _context.CatDate
-                .FirstOrDefaultAsync(m => m.CatDateId == id);
-            if (catDate == null)
-            {
-                return NotFound();
-            }
-
-            return View(catDate);
         }
 
         // GET: CatDate/Create
@@ -67,26 +59,25 @@ namespace AnimalCrossing.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CatDateId,HostId,GuestId,Location,DateTime")] CatDate catDate)
+        public IActionResult Create([Bind("CatDateId,HostId,GuestId,Location,DateTime")] CatDate catDate)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(catDate);
-                await _context.SaveChangesAsync();
+                ICatRepo.Save(catDate);
                 return RedirectToAction(nameof(Index));
             }
             return View(catDate);
         }
 
         // GET: CatDate/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public IActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var catDate = await _context.CatDate.FindAsync(id);
+            var catDate = ICatRepo.Get((int)id);
             if (catDate == null)
             {
                 return NotFound();
@@ -99,7 +90,7 @@ namespace AnimalCrossing.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("CatDateId,HostId,GuestId,Location,DateTime")] CatDate catDate)
+        public IActionResult Edit(int id, [Bind("CatDateId,HostId,GuestId,Location,DateTime")] CatDate catDate)
         {
             if (id != catDate.CatDateId)
             {
@@ -110,8 +101,8 @@ namespace AnimalCrossing.Controllers
             {
                 try
                 {
-                    _context.Update(catDate);
-                    await _context.SaveChangesAsync();
+                    ICatRepo.Save(catDate);
+
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -130,15 +121,15 @@ namespace AnimalCrossing.Controllers
         }
 
         // GET: CatDate/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var catDate = await _context.CatDate
-                .FirstOrDefaultAsync(m => m.CatDateId == id);
+            var catDate = ICatRepo.Get((int)id);
+
             if (catDate == null)
             {
                 return NotFound();

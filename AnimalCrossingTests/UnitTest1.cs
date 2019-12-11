@@ -4,6 +4,7 @@ using System.Linq;
 using AnimalCrossing;
 using AnimalCrossing.Controllers;
 using AnimalCrossing.Models;
+using AnimalCrossing.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using Xunit;
@@ -98,8 +99,24 @@ namespace AnimalCrossingTests
             mockRepo.Verify();
         }
 
-        //[Fact]
-        //public void SearchCat_
+        [Fact]
+        public void TestCateDateIndex() {
+
+            // Arrange
+            var mockRepo = new Mock<ICatDateRepository>();
+            mockRepo.Setup(repo => repo.Get())
+                .Returns(TestService.GetCatDates());
+            var controller = new CatDateController(mockRepo.Object);
+
+            // Act
+            var result = controller.Index();
+
+            // Assert
+            var viewResult = Assert.IsType<ViewResult>(result);
+            var model = Assert.IsAssignableFrom<IEnumerable<CatDate>>(
+                viewResult.ViewData.Model);
+            Assert.Equal(1, model.Count());
+        }
 
     }
 }
