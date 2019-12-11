@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using AnimalCrossing.Data;
 using AnimalCrossing.Models;
 using AnimalCrossing.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AnimalCrossing.Controllers
 {
@@ -55,6 +56,7 @@ namespace AnimalCrossing.Controllers
         }
 
         // GET: CatDate/Create
+        [Authorize]
         public IActionResult Create()
         {
             return View();
