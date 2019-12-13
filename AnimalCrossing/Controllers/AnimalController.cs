@@ -22,6 +22,11 @@ namespace AnimalCrossing.Controllers
             _context = context;
             IAnimalRepo = iAnimalRepo;
             SpeciesRepo = Species;
+            
+        }
+
+        public AnimalController(IAnimalRepository iAnimalRepo) {
+            IAnimalRepo = iAnimalRepo;
         }
 
         // GET: /<controller>/

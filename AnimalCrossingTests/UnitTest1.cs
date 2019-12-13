@@ -118,5 +118,40 @@ namespace AnimalCrossingTests
             Assert.Equal(1, model.Count());
         }
 
+        [Fact]
+        public void TestDeleteCatWorks()
+        {
+            /*// Arrenge
+            var mockRepo = new Mock<IAnimalRepository>();
+            var catId = 1;
+            //mockRepo.Setup(repo => repo.Get()).Returns(TestService.CatTestList);
+            mockRepo.Setup(repo => repo.Delete(catId));
+            var controller = new AnimalController(mockRepo.Object);
+
+            //Act
+            var result = controller.DeleteCat(catId);
+
+            //Assert
+            Assert.Equal(1, repo);
+            */
+
+            //Arrange
+            var mockRepo = new Mock<IAnimalRepository>();
+            var controller = new AnimalController(mockRepo.Object);
+
+            var catId = 1;
+            //Act
+            var result = controller.DeleteCat(catId);
+
+            //Assert
+            var ViewResult = Assert.IsType<ViewResult>(result);
+            var model = Assert.IsAssignableFrom<IEnumerable<Cat>>(ViewResult.ViewData.Model);
+            Assert.IsType<ViewResult>(ViewResult);
+            Assert.Equal(2,model.Count());
+
+            //Assert.Equal(1, mockRepo.Object.Delete(catId));
+
+        }
+
     }
 }

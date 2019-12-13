@@ -54,6 +54,49 @@ namespace AnimalCrossingTests
             return CatDate; 
         }
 
+        public static List<Cat> CatTestList()
+        {
+            var catList = new List<Cat>();
+            catList.Add(new Cat()
+            {
+                CatId = 1,
+                Name = "Test1",
+                Gender = 0,
+                SpeciesId = 1
+            } as Cat);
+
+            catList.Add(new Cat()
+            {
+                CatId = 2,
+                Name = "Test2",
+                Gender = 0,
+                SpeciesId = 0
+            } as Cat);
+            catList.Add(new Cat()
+            {
+                CatId = 3,
+                Name = "Test3",
+                Gender = 0,
+                SpeciesId = 0
+            } as Cat);
+
+
+            return catList;
+        }
+
+        public static List<Cat> Delete(int catId)
+        {
+            var catList = CatTestList();
+            catList.ForEach(element => { 
+                if(element.CatId == catId)
+                {
+                    catList.Remove(element);
+                }
+            });
+
+            return catList;
+        }
+
         public TestService()
     {
     }
