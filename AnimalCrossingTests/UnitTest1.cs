@@ -131,11 +131,10 @@ namespace AnimalCrossingTests
             var result = controller.DeleteCat(catId);
 
             //Assert
-            var ViewResult = Assert.IsType<ViewResult>(result);
-            Assert.IsType<ViewResult>(ViewResult);
+
+            Assert.IsType<ViewResult>(result);
             mockRepo.Verify();
 
         }
-
     }
 }
