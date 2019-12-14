@@ -124,14 +124,14 @@ namespace AnimalCrossingTests
             //Arrange
             var catId = 1;
             var mockRepo = new Mock<IAnimalRepository>();
+            var mockSpeciesRepo = new Mock<ISpeciesRepository>();
             mockRepo.Setup(repo => repo.Delete(catId)).Verifiable();
-            var controller = new AnimalController(mockRepo.Object);
+            var controller = new AnimalController(mockRepo.Object,mockSpeciesRepo.Object);
 
             //Act
             var result = controller.DeleteCat(catId);
 
             //Assert
-
             Assert.IsType<ViewResult>(result);
             mockRepo.Verify();
 

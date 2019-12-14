@@ -18,16 +18,16 @@ namespace AnimalCrossing.Controllers
         private readonly IAnimalRepository IAnimalRepo;
         private readonly ISpeciesRepository SpeciesRepo;
 
-        public AnimalController(AnimalCrossingContext context, IAnimalRepository iAnimalRepo, ISpeciesRepository Species) {
-            _context = context;
+        public AnimalController(IAnimalRepository iAnimalRepo, ISpeciesRepository Species) {
+            //_context = context;
             IAnimalRepo = iAnimalRepo;
             SpeciesRepo = Species;
             
         }
 
-        public AnimalController(IAnimalRepository iAnimalRepo) {
-            IAnimalRepo = iAnimalRepo;
-        }
+        //public AnimalController(IAnimalRepository iAnimalRepo) {
+        //    IAnimalRepo = iAnimalRepo;
+        //}
 
         // GET: /<controller>/
         public IActionResult Index()
