@@ -5,7 +5,7 @@ namespace AnimalCrossing.Models.ViewModels
 {
     public class CatVm
     {
-        public int CatId { get; set; }
+        //public int CatId { get; set; }
 
 
         [Required(ErrorMessage = "All cats must have a name")]

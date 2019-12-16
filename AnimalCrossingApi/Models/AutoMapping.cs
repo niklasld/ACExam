@@ -4,12 +4,11 @@ using AutoMapper;
 
 namespace AnimalCrossingApi.Models
 {
-    public class CatProfileAutoMapping : Profile
+    public class AutoMapping : Profile
     {
-        public CatProfileAutoMapping()
+        public AutoMapping()
         {
-
-            CreateMap<CatProfileAutoMapping, CatVm>();
+            CreateMap<AnimalCrossing.Models.Cat, CatVm>();
         }
     }
 }
